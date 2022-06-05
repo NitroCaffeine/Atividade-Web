@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 !important;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	padding: 5px 0;
+	background: green;
+	height: 10vh;
+}
+main {
+	height: 80vh;
+}
+
+.box {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulos {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+}
+
+form {
+	width: 100%;
+	margin: 30px auto;
+}
+
+form h2 {
+	text-align: center;
+	font-size: 1.8em;
+	color: black;
+}
+
+.grupo {
+	display: inline-block;
+}
+
+label {
+	display: block;
+	margin: 0 0 10px;
+	font-size: 20px;
+}
+
+table {
+	width: 400px;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+thead {
+	background:  green;
+	color: white;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px 15px;
+	font-size: 18px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 100%;
+	border-color: green;
+	box-sizing: border-box;
+}
+
+.input-medio {
+	display: inline-block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 100%;
+	border-color: green;
+	box-sizing: border-box;
+}
+
+.grupo{
+	width: 32.8%;
+	display: inline-block;
+}
+
+.botao {
+	background: green;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+.botao:hover {
+	background: green;
+	transition: 1s background;
+	cursor: pointer;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.animacao {
+	opacity: 0;
+	transition: 1s;
+}
+
+.invisivel {
+	display: none;
+}
+
+footer img {
+	width: 10%;
+	padding-top: 20px;
+}
+
+footer {
+	text-align: center;
+	background: black;
+	width: 100%;
+	position: absolute;
+	margin-top: auto;
+	height: 10vh;
+}
+
+footer p {
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	padding: 20px;
+	height: 100%;
+}
