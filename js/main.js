@@ -1,17 +1,27 @@
+try{
+    FuncStorage()
 
-FuncStorage()
+} catch(e){
+
+}
+
+
 
 function getValue() {
+    
     const input_nome = document.getElementById('nome').value
     const input_nota1 = document.getElementById('nota1').value
     const input_nota2 = document.getElementById('nota2').value
     const input_nota3 = document.getElementById('nota3').value
 
-    if( input_nome =='' || input_nota1 =='' || input_nota2=='' || input_nota3==''){
+    if (input_nome == '' || input_nota1 == '' || input_nota2 == '' || input_nota3 == '') {
         return false
     }
 
+
+
     obj = {
+      
         nome: input_nome,
         nota1: input_nota1,
         nota2: input_nota2,
@@ -20,6 +30,10 @@ function getValue() {
         situacao: null,
 
     }
+
+   
+
+
 
     return obj
 
@@ -32,16 +46,16 @@ function Val() {
 
     console.log(data)
 
-    if (data=== false) {
+    if (data === false) {
         alert("Insira todos os dados")
     }
-    else{
-        window.location.href = 'tabela.html'
-    
 
-        localStorage.setItem(data.nome, JSON.stringify(data))
+    window.location.href = 'tabela.html'
 
-    }
+
+    localStorage.setItem(data.nome, JSON.stringify(data))
+
+
 
 
 
@@ -103,7 +117,7 @@ function situation(dados) {
 
     const media = (nota1 + nota2 + nota3) / 3
 
-    dados.media = media
+    dados.media = media.toFixed(2)
 
     console.log(media)
 
@@ -116,7 +130,7 @@ function situation(dados) {
     else if (4.0 <= media && media < 7.0) {
         dados.situacao = "Prova Final"
     }
-    else if ( media < 4.0) {
+    else if (media < 4.0) {
         dados.situacao = "Reprovado"
     }
 
